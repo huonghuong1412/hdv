@@ -1,0 +1,655 @@
+/* ===Các hiệu ứng chuyển động của Icon */
+
+
+/* 
+    http://l-lin.github.io/font-awesome-animation/
+        ======= Chuyển động liên tục
+    faa-wrench animated
+    faa-ring animated
+    faa-horizontal animated
+    faa-vertical animated
+    faa-flash animated
+    faa-bounce animated
+    faa-spin animated
+    faa-float animated
+    faa-pulse animated
+    faa-shake animated
+    faa-tada animated
+    faa-passing animated
+    faa-passing-reverse animated
+    faa-burst animated
+    faa-falling animated
+    
+        ======= Khi rê chuột vào Icon
+        
+    faa-wrench animated-hover
+    faa-ring animated-hover
+    faa-horizontal animated-hover
+    faa-vertical animated-hover
+    faa-flash animated-hover
+    faa-bounce animated-hover
+    faa-spin animated-hover
+    faa-float animated-hover
+    faa-pulse animated-hover
+    faa-shake animated-hover
+    faa-tada animated-hover
+    faa-passing animated-hover
+    faa-passing-reverse animated-hover
+    faa-burst animated-hover
+    faa-falling animated-hover
+
+ */
+
+
+/**
+* ===================== Animate Affect
+**/
+
+.animate-top {
+    position: relative;
+    animation: animatetop 0.8s
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.animate-left {
+    position: relative;
+    animation: animateleft 0.8s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.animate-right {
+    position: relative;
+    animation: animateright 0.8s
+}
+
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0
+    }
+    to {
+        right: 0;
+        opacity: 1
+    }
+}
+
+.animate-bottom {
+    position: relative;
+    animation: animatebottom 0.8s
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+.animate-zoom {
+    animation: animatezoom 0.8s
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.animate-spin {
+    animation: w3-spin 2s infinite linear
+}
+
+@keyframes w3-spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
+
+.animate-fading {
+    animation: fading 0.8s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.animate-opacity {
+    animation: opac 2s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/**
+* ===================== Hidden Class
+**/
+
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none !important;
+    }
+}
+
+
+/**
+* ===================== Modal Payment
+**/
+
+.modal-payment {
+    margin-top: 140px;
+}
+
+.paymentWrap {
+    padding: 30px;
+}
+
+.paymentWrap .paymentBtnGroup {
+    max-width: 800px;
+    margin: auto;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod {
+    padding: 40px;
+    box-shadow: none;
+    position: relative;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod.active {
+    outline: none !important;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod.active .method {
+    /** border-color: #4cd264; **/
+    outline: none !important;
+    box-shadow: 0px 3px 22px 0px #7b7b7b;
+}
+
+.paymentWrap .paymentBtnGroup .paymentMethod .method {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    left: 3px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+
+/**
+* ===================== CSS Tạo dấu chỉ tay khi rên chuột
+**/
+
+.hand-pointer:hover {
+    cursor: pointer;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 6px 12px #777;
+    box-shadow: 0 6px 12px #777;
+}
+
+
+/**
+* ===================== CSS viền Fone chữ
+**/
+
+.border-text {
+    text-shadow: 2px 0 0 #ec6a54, -2px 0 0 #ec6a54, 0 2px 0 #ec6a54, 0 -2px 0 #ec6a54, 1px 1px #ec6a54, -1px -1px 0 #ec6a54, 1px -1px 0 #ec6a54, -1px 1px 0 #ec6a54;
+}
+
+
+/**
+* //////////////////////  Form bình luận
+**/
+
+.rew_blk {
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+}
+
+.rew_blk h5 {
+    color: #333;
+    text-transform: uppercase;
+}
+
+.rew_blk .top_row {
+    border-bottom: 1px dotted #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.rew_blk .top_row .date,
+.rew_blk .top_row .user,
+.rew_blk .top_row .product-rating {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 20px;
+    padding-left: 0;
+}
+
+.rew_blk .top_row .date .fa,
+.rew_blk .top_row .user .fa {
+    color: #999999;
+    margin-right: 7px;
+}
+
+.rew_blk .top_row .date,
+.rew_blk .top_row .user,
+.rew_blk .top_row .product-rating {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 20px;
+    padding-left: 0;
+}
+
+.rew_blk .top_row .date .fa,
+.rew_blk .top_row .user .fa {
+    color: #999999;
+    margin-right: 7px;
+}
+
+.rew_blk p {
+    margin: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+#comment-reply-form {
+    margin-top: 30px;
+}
+
+.widget-title {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.333;
+    margin: 0 0 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#comment-reply-form input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #eee;
+}
+
+.content-img img {
+    height: auto!important;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 0px;
+    text-align: center;
+    object-fit: contain;
+}
+
+.blog_entry p {
+    margin: 0px;
+}
+
+
+/**
+* //////////////////////  Tooltip price
+**/
+
+.price-sign {
+    /* display: ; */
+    margin-top: 0px;
+    text-decoration: none
+}
+
+.price {
+    position: relative;
+    /** == border-bottom: 1px dotted #3d4f69; == **/
+}
+
+
+/* khi giao dien phai tra phi */
+
+.price .tooltipflag {
+    visibility: hidden;
+    width: 92px;
+    background-color: #d54e4b;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    border-radius: 6px;
+    font-weight: 700;
+    width: 82px;
+    top: -10px;
+    left: 75px;
+    margin-left: -60px;
+    border: 1px solid;
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
+}
+
+.price .arrow-left::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #d54e4b transparent transparent;
+}
+
+
+/* khi giao dien dung mien phi */
+
+.price .tooltipfree {
+    visibility: hidden;
+    width: 92px;
+    background-color: #00a63f;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    border-radius: 6px;
+    font-weight: 700;
+    width: 82px;
+    top: -10px;
+    left: 75px;
+    margin-left: -60px;
+    border: 1px solid;
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
+}
+
+.price .arrow-left-free::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #00a63f transparent transparent;
+}
+
+
+/* khi giao dien dang khuyen mai */
+
+.price .tooltipgift {
+    visibility: hidden;
+    width: 92px;
+    background-color: #d58512;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    border-radius: 6px;
+    font-weight: 700;
+    width: 82px;
+    top: -10px;
+    left: 75px;
+    margin-left: -60px;
+    border: 1px solid;
+    position: absolute;
+    z-index: 1;
+    visibility: visible;
+}
+
+.price .arrow-left-gift::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #d58512 transparent transparent;
+}
+
+
+/**
+* ===================== Bỏ thuộc tính Input Number
+**/
+
+
+/**
+* == Fire Fox
+**/
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+
+
+/**
+* == Chrome
+**/
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/** ===================== Menu liên kết **/
+
+.sidenav {
+    width: 52px;
+    position: fixed;
+    z-index: 1;
+    bottom: 25px;
+    /** == left: 13px; == **/
+    background: #fff;
+    border-radius: 5px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 14px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #32608b;
+    display: block;
+}
+
+.sidenav {
+    width: auto !important;
+    z-index: 150 !important;
+    bottom: 50px !important;
+    padding: 10px 0;
+    border: 1px solid #f2f2f2;
+}
+
+.sidenav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav ul>li a {
+    padding: 3px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    color: #515151;
+    font-weight: 700;
+}
+
+.sidenav ul>li a i {
+    width: 33px;
+    height: 33px;
+    display: block;
+    margin: auto;
+}
+
+
+/********************** icon **********************/
+
+.icon-chat-circle {
+    background: url("https://shopxanh.com:88/files/shopxanh/icon/icon-chat.png") no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.icon-youtube-circle {
+    background: url("https://shopxanh.com:88/files/shopxanh/icon/icon-youtube.png") no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.icon-call-circle {
+    background: url("https://shopxanh.com:88/files/shopxanh/icon/icon-call.png") no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.icon-heart-circle {
+    background: url("https://shopxanh.com:88/files/shopxanh/icon/icon-heart.png") no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.icon-messenger-circle {
+    background: url("https://shopxanh.com:88/files/shopxanh/icon/icon-messenger.png") no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.icon-zalo-circle {
+    background: url("https://shopxanh.com:88/files/shopxanh/icon/icon-zalo-circle2.png") no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+.icon-angle-up-circle {
+    background: url("https://shopxanh.com:88/files/shopxanh/icon/icon-angle-up.png") no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+}
+
+
+/** ================================================================================= **/
+
+
+/** ============================== Language Editer CSS ============================== **/
+
+.updated-text {
+    position: relative;
+}
+
+.editable {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-radius: 51%;
+    width: 20px;
+    text-align: center;
+    background-color: #ff0;
+    font-size: 9pt;
+    padding: 0 5px;
+    z-index: 9999;
+}
+
+.editable-form {
+    position: relative;
+    z-index: 9999;
+    width: auto;
+    margin: 0px auto;
+}
+
+.editable-form .submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.editable-form input {
+    width: auto;
+}
+
+
+/** ============================== Language Editer CSS ============================== **/
+
+
+/** ================================================================================= **/

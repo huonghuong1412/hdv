@@ -1,0 +1,136 @@
+/* Custom CSS Giao dien Website Canifa Perfume
+ => Tai trinh duyet, bam F12 -> Copy class va CSS -> dan vao trinh soan thao đe code lai giao dien
+ => Trinh soan thao chi cho phep code CSS. Cac thuộc tinh PHP, Javascript... se khong đuoc thuc thi
+*/
+
+/*Màu nền TOP*/
+.tp-bar {
+    border-top: 3px solid #0e0e0e;
+    background-color: #fff;
+}
+/* Màu nền thành Menu */
+.main-bar {
+	background-color: #fff;
+}
+/* Màu nền chủ đạo của website */
+.section {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color:#fff;
+}
+
+/* Màu nền của Footer  */
+.bg-lighter-grey{
+    background-color: #f9f9f9;
+}
+
+/* =====================> Style Contact  Button */
+
+h1{ margin: 0; }
+#contact:hover { background: #666; }
+#contact:active { background: #444; }
+#contactForm { 
+  display: none;
+  border: 6px solid salmon; 
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+}
+input, textarea { 
+  margin: .8em auto;
+  font-family: inherit; 
+  text-transform: inherit; 
+  font-size: inherit;
+  width: 280px; 
+  padding: .4em;
+}
+textarea { height: 80px; resize: none; }
+
+.icon-phone:before {
+    content: "\f095";
+    padding: 0;
+    color: #df2e1b;
+    font-size: 40px;
+    height: 35px;
+    line-height: 35px;
+    padding: 4px;
+    text-align: center;
+    width: 35px;
+    margin-right: 6px;
+    padding-top: 9px;
+}
+.call-now {
+    z-index: 9999;
+	left: 0;
+	bottom: 25px;
+	height: 50px;
+	min-width: 200px;
+	position: fixed;
+	background-color: #1f93c8;
+	border-radius: 0 25px 25px 0;
+	box-shadow: 0 1px 2px rgba(0,0,0,.8);
+	z-index: 998;
+}
+.call-now .btn-call-now i {
+	position: absolute;
+	color: red;
+	background-color: #fff;
+	font-size: 35px;
+	right: 0;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #1f93c8;
+}
+.call-now .btn-call-now p {
+	color: #fff;
+	font-size: 14px;
+	min-width: 150px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+}
+.call-now .btn-call-now strong {
+	display: block;
+	font-size: 18px;
+}
+
+.call-now p strong{
+    width: 100%; 
+    display: block; 
+    padding-left: 5px; 
+    line-height: 15px!important;
+    text-align: left; 
+    padding-left: 10px;
+}
+
+.call-now p a{
+    color: white; 
+    text-align: center; 
+    font-size: 18px; 
+    text-decoration: none; 
+    line-height: 22px;
+}
+
+/*end nut goi*/
+.pulse {
+  position: relative;
+  box-shadow: 0 0 0 0 white;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.pulse:hover {
+  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+}
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0)}
